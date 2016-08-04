@@ -30,4 +30,6 @@
         })
     ]
     ```
+
+- css-loader依赖的postcss插件最低node.js版本要求是0.12.故引起webpack执行报错。
     

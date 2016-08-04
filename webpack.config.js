@@ -3,6 +3,7 @@ var path = require('path');
 var fs = require('fs');
 var CommonsChunkPlugin = require("webpack/lib/optimize/CommonsChunkPlugin");
 var uglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 var srcDir = path.resolve(process.cwd(), 'assets');
 
@@ -32,7 +33,8 @@ module.exports = {
   module: {
     loaders: [
       { test: require.resolve(srcDir + '/js/common/angular/angular.js'), loader: "exports?window.angular" },
-      { test: require.resolve(srcDir + '/js/app/util.js'), loader: "exports?window.util" }
+      { test: require.resolve(srcDir + '/js/app/util.js'), loader: "exports?window.util" },
+      { test: /\.css$/, loader: 'style-loader!css-loader'}
     ]
   },
   resolve: {

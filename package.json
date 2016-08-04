@@ -24,11 +24,17 @@
   },
   "homepage": "https://github.com/navyxie/angular-wepack-gulp-demo",
   "devDependencies": {
+    "css-loader": "^0.23.1",
     "exports-loader": "^0.6.3",
     "gulp": "^3.9.1",
     "gulp-clean": "^0.3.2",
     "gulp-shell": "^0.5.2",
     "http-server": "^0.9.0",
+    "postcss-loader": "^0.9.1",
+    "style-loader": "^0.13.1",
     "webpack": "^1.13.1"
+  },
+  "engines": {
+    "node": ">=0.12.0"
   }
 }
