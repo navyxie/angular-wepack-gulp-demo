@@ -24,9 +24,12 @@ function getEntry () {
   return files;
 }
 
+var entry = getEntry();
+entry['cookie__'] = ['cookie','_'];
+
 module.exports = {
   devtool: "source-map",
-  entry: getEntry(),
+  entry: entry,
   output: {
     path: path.join(__dirname, 'assets/dist/js/'),
     // publicPath: 'assets/dist/js/',
@@ -43,19 +46,18 @@ module.exports = {
     alias: {
       angular: srcDir + '/js/common/angular/angular.js',
       cookie: srcDir + '/js/common/cookie/cookie.js',
+      _: srcDir + '/js/common/underscore/1.6.0/underscore.js',
       util: srcDir + '/js/app/util.js'
-      // _: srcDir + '/js/common/underscore/1.6.0/underscore.min.js'
     }
   },
   plugins: [
     new webpack.ProvidePlugin({
       angular: 'angular',
-      util: 'util'
-      // cookie: 'cookie'
-      // _: '-'
+      util: 'util',
+      cookie: 'cookie',
+      _: '_'
     }),
     new CommonsChunkPlugin('common.js'),
-    //new CommonsChunkPlugin("angular-underscore.js", ["angular", "underscore"]),
     new uglifyJsPlugin({
       compress: {
         warnings: false

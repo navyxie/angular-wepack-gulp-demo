@@ -1,6 +1,4 @@
-var service = require('./service');
-// var util = require('./util');
-// var angular = require('angular');
+require('./service');
 require('../../css/reset.css');
 require('../../css/login.css');
 angular.module('app',['app.appService'])
