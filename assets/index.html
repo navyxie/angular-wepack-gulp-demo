@@ -1,10 +1,19 @@
 <!doctype html>
-<html lang="en" prefix="og: http://ogp.me/ns#">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <title>index</title>
 </head>
-<body>
-  index
+<body ng-app="app">
+  <div ng-controller="indexCtrl">
+    <span>hello</span>
+    <span ng-bind="name"></span>
+  </div>
 </body>
+<script type="text/javascript" src="/dist/js/common.js"></script>
+<script type="text/javascript" src="/dist/js/index.js"></script>
+
+<!-- <script type="text/javascript" src="/js/common/angular/angular.js"></script>
+<script type="text/javascript" src="/js/app/index_entry.js"></script> -->
+
 </html>
