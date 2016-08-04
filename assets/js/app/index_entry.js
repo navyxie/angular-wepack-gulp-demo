@@ -3,5 +3,5 @@
 // var angular = require('angular');
 angular.module('app',[])
 .controller('indexCtrl',['$scope', function(scope){
-  scope.name = 'index';
+  scope.name = 'index, welcome!';
 }]);

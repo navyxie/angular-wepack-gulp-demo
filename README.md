@@ -1,5 +1,10 @@
 # angular-wepack-gulp-demo
 
+## usage
+
+1 http-server assets
+2 gulp dev
+
 ## 总结
 
 - 在引入非common文件时,需要通过exports-loader插件引入(需要安装exports-loader插件)引入方式如下:
