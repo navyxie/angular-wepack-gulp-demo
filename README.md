@@ -31,5 +31,5 @@
     ]
     ```
 
-- css-loader依赖的postcss插件最低node.js版本要求是0.12.故引起webpack执行报错。
+- css-loader依赖的postcss插件最低node.js版本要求是0.12.故引起webpack执行报错。也可以通过安装模块"es6-promise",然后在webpack.config.js配置中引入"require('es6-promise').polyfill()"解决
     
