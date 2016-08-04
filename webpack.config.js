@@ -1,6 +1,8 @@
-var webpack = require('webpack');
 var path = require('path');
 var fs = require('fs');
+require('es6-promise').polyfill();
+
+var webpack = require('webpack');
 var CommonsChunkPlugin = require("webpack/lib/optimize/CommonsChunkPlugin");
 var uglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
 var ExtractTextPlugin = require('extract-text-webpack-plugin');

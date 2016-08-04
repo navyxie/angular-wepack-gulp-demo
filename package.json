@@ -25,6 +25,7 @@
   "homepage": "https://github.com/navyxie/angular-wepack-gulp-demo",
   "devDependencies": {
     "css-loader": "^0.23.1",
+    "es6-promise": "^3.2.1",
     "exports-loader": "^0.6.3",
     "gulp": "^3.9.1",
     "gulp-clean": "^0.3.2",
@@ -35,6 +36,6 @@
     "webpack": "^1.13.1"
   },
   "engines": {
-    "node": ">=0.12.0"
+    "node": ">=0.10.0"
   }
 }
