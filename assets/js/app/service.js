@@ -1,5 +1,5 @@
 angular.module('app.appService',[])
-  .factory('appService',[], function () {
+  .factory('appService', function () {
     return {
       random: Math.random
     }
