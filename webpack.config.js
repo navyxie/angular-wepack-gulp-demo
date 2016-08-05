@@ -40,7 +40,8 @@ module.exports = {
       { test: require.resolve(srcDir + '/js/common/angular/angular.js'), loader: "exports?window.angular" },
       { test: require.resolve(srcDir + '/js/app/util.js'), loader: "exports?window.util" },
       { test: /\.css$/, loader: 'style-loader!css-loader'}
-    ]
+    ],
+    noParse: [srcDir + '/js/common/angular/angular.js',srcDir + '/js/common/cookie/cookie.js',srcDir + '/js/common/underscore/1.6.0/underscore.js']
   },
   resolve: {
     alias: {
