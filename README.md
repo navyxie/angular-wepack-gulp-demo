@@ -38,6 +38,8 @@
     
 - webpack 文件路径:  相对路径是相对当前目录。绝对路径是相对入口文件(假如入口文件是index.js,绝对路径/util.js就是和index.js在同一目录.)
 
+- webpack对插件的执行顺序是从后往前的，比如`{ test: /\.css$/, loader: 'style-loader!css-loader'}`，先执行css-loader,再执行style-loader
+
 
 中文站点:
 - https://fakefish.github.io/react-webpack-cookbook/
