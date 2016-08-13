@@ -6,6 +6,7 @@
 
 2 gulp dev
 
+3 open browser and enter `http://localhost:4000`
 
 ## 总结
 
